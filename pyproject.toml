@@ -1,0 +1,25 @@
+[build-system]
+
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "parse_samba_tdb"
+authors = [{name = "Stalin Iosiph", email="stalin@oib.ussr"}]
+version = "1.0.0"
+
+readme = "README.md"
+license = {text = "MIT License"}
+
+requires-python = ">=3.12.0"
+
+dependencies = [
+  "argparse",
+  "colorama"
+]
+
+[project.urls]
+Repository = "https://github.com/TovStalin/parse_samba_tdb"
+
+[project.scripts]
+parse_samba_tdb = "parse_samba_tdb.__init__:main"
